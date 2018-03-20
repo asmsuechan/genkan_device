@@ -1,8 +1,9 @@
 language: go
 go:
   - 1.10
-before_deploy:
+before_install:
   - go get -u gobot.io/x/gobot
+before_deploy:
   - go get -u github.com/laher/goxc
   - mkdir -p $TRAVIS_BUILD_DIR/dist
   - goxc -d=$TRAVIS_BUILD_DIR/dist -pv=$GENKAN_VERSION -arch=arm -os=linux -+tasks=clean,compile,archive xc -GOARM=6
