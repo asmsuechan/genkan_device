@@ -20,4 +20,4 @@ deploy:
 
 env:
   global:
-    - GENKAN_VERSION: '0.0.2'
+    - GENKAN_VERSION: '0.0.3'
