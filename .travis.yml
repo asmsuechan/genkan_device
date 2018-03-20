@@ -1,9 +1,8 @@
 language: go
 go:
   - 1.7
-before_install:
-  - go get -u gobot.io/x/gobot
 before_deploy:
+  - go get -u gobot.io/x/gobot
   - go get -u github.com/laher/goxc
   - mkdir -p $TRAVIS_BUILD_DIR/dist
   - goxc -d=$TRAVIS_BUILD_DIR/dist -pv=$GENKAN_VERSION -arch=arm -os=linux -+tasks=clean,compile,archive xc -GOARM=6
@@ -21,7 +20,7 @@ deploy:
 
 env:
   global:
-    - GENKAN_VERSION: '0.0.1'
+    - GENKAN_VERSION: '0.0.2'
     - secure: "LBLEio6lmazb2+nIVMkyIQBAobmaPjmuwXxxvnm/G7JHCYU5rT4bqgCiYiHc028FNj7O50+1rqPqAsgNlRhJbtcIlnT10HVzKTQwHtuDuHAsZtQj4MruBjSOCXKPxDP8QoS6ucEKwkWKg+TWjrZZLVldPOhulnC4xzqUoCA7dt3QOGEqhuR5hs7bBu8jECLYtjrjmXUYEU+FCe5g2w2pA5Xb/17F5gr3z/jPU+HluwK6kdVezYEaE42oybvMewL2k6eH1Tm55pWijSQ362dPtE+3cLuKnMhTjnRhyD+w784/pdUMJsjG4SsrW5iaJYuCrxBhMr5C7B5RZqRdMkO7Xz34kcOi8/P3pQ199GbJkDl0wbCq8hcf90nDPXrTxtJuIvXyl1pgfY2LYS7alKu5YfdUcbPszp9MJj0RmuRhURz6ZR7bNT93OnNX/6QSX0fTlesAWj7a5iDhk3RAFYcydj5nRVRDblkvJD3yzhhq2N8VzlyOQWLivMD66CEWwx1nWSEtTTlYBJ/yOmZpVi7ir38Ua9BaKQz21VyGpcj5vG7L97Ig8acrPmdng0SeYq590fnIRfJF9rulC/q71Lg09Xcx8+0Q2apqUo68TAjSDXtaLqQeV10YQzV0/HPxTpBzgaaekRfLElv4Br7Wht31QJT+lzsF9j/oMMJTDANlM9g="
     - secure: "zrOsZoBRVmvqX/DQAInVwxRQCedKEqWl8U/VZ5DDl3iBRGA/PBrMuwNKBuybFL6oN+hMfuM3eg6X1CPV3pg/7w2GcCO18mGYEUiTGGaJc6FNt7uohf1CrCsG+e7Fj/FNliXe+gWtFQ94eKnV9mg0iRSZCIIVIOYNMl+fryePAOKQm0DHE2v389Tas59guFtQo8kLBwfjtZ9xTaS9mfHuNSAnZiQzqpNqV9lU72gipK3n/sTwcDSjGYrZsY/CPNHIGJecRUUB+voP71pHh3y5N/wVN4c5QIjnMvMBZTSRBYuRJpZVKJ75fQeNY/CVoolJbSGynG4u0bktqYWqRIxne9609xEOx5XKS9i0NG1fHZCegEfLdpcWrvWb3JHthtbjOHkuXhDUfWXM8eW6imnA2iOIwxXCYICujrIUP8x5MScl3CnoDs3hH1YU3mc7QyJ2iywI/f5wrzLSemgZM1QH3CYl1NB1kF8LfiWp2y3bGUU3lNG7i2iSYZMGqIvhRewcMiAjPRhACGSQMt4t4XFqBP93yDPrdIcQVkgoFKK9C49M13SWfQoXEiRikna1Xy/wiGtZNZDvetwok+OqLXsKLV+z1US94Vo/2DGUEOyfafi6QO8XhjbZEEvDSdVNXL5qaqzGJJFhloVvfBW1rFFsq81kRoEtZME/X+H7aezP8MQ="
     - secure: "ff71eNHcZQg3aibIRuZ1YVQa5JZ6AuMNzVVOgTjZdBaT9Ys22wBPNBJCZkb2iKzw2YCcADhTqsDMGXaJQIVxZNCsCUUGDzWwy2nDYrJNFUD8wm9TprR8vjEQC8a82T3gPXomN7idDytUkBfOXpmbwLH9RWy0h2M6pUHPmjULlTSRRTdp6ANF7oNjurRy8vJ1eZv93Pu+PFSOCR4QGo/fw4U+JHR1L1vVaoXyFFpwcgn9FRydz1jIrVxoXTUU2X+oAeUH32k3o8hdDyk/7Lb4hWOPsbDvhtwTidkzA6VE7sbcEEufNcHILJnfsohOia0iiINryrMuEU3/hmTOFEuJKUdac8HqB2I3AhtFdsXSM4LS5eFw7tBrVr0C/I0NteSwjldHbTXKamyOiZNw9+O2b5cqivdCuOO77bHGlC82ydOkliZdPHT0pIzAjd/lTqRrw0Js4S5jQPuy8AttWYLa0UacK88nzIb5idi6s+5wZPhnpaVaIkt5qO9kTI0B4k3dUCdrtFakJc+BBaeF+i0RT9VE0BLThq/Dwsym25qLO1jCBhRE8R7Yol1gyjS9ALrYJFuae79FPQUe03Lg3jaFIvgr4IrowY+uAvBDiSPCnxIOfI/G8QD1d+MJ2IQsjtjPVqS7amm/IQXtiRsm8Rt7uIMJH0HI232w1dV5JFPe23o="
