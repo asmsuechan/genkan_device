@@ -1,12 +1,12 @@
 package main
 
 import (
-	"gobot.io/x/gobot"
-	"gobot.io/x/gobot/platforms/mqtt"
 	"os"
 	"reflect"
 
+	"gobot.io/x/gobot"
 	"gobot.io/x/gobot/drivers/gpio"
+	"gobot.io/x/gobot/platforms/mqtt"
 	"gobot.io/x/gobot/platforms/raspi"
 )
 
