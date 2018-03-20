@@ -1,7 +1,6 @@
 package main
 
 import (
-	"fmt"
 	"os"
 	"reflect"
 
@@ -18,7 +17,6 @@ func main() {
 	id := "device"
 	userName := os.Getenv("GENKAN_USERNAME")
 	password := os.Getenv("GENKAN_PASSWORD")
-	fmt.Println(uri, userName, password)
 	mqttAdaptor := mqtt.NewAdaptorWithAuth(uri, id, userName, password)
 
 	adaptor := raspi.NewAdaptor()
