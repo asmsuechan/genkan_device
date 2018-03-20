@@ -15,9 +15,9 @@ deploy:
   file:
     - dist/${GENKAN_VERSION}/genkan_device_${GENKAN_VERSION}_linux_arm.tar.gz
   on:
-    tags: false
+    tags: true
     branch: master
 
 env:
   global:
-    - GENKAN_VERSION: '0.0.3'
+    - GENKAN_VERSION: '0.0.4'
