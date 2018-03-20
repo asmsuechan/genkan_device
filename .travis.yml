@@ -1,6 +1,6 @@
 language: go
 go:
-  - 1.10
+  - 1.7
 before_install:
   - go get -u gobot.io/x/gobot
 before_deploy:
