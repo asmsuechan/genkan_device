@@ -14,8 +14,7 @@ deploy:
   api_key:
     secure: "1chqp+xFzhOaI3ulhltRjv4V4ANv2eeqS4Wr0zOW0uJl8SN2l2SMSbGNNKPa5PST4wtTNVQbbed1CixyuYs5Ak+EQuLMn6aoxzYaVDjsm81eaBLcwUx2IJTqmn6d7bzdAVLiY3I7c4PilbFY0FVau6PMauAE44YRKJ3Pf34hD4L+jaOzyUdrxM1osw4qb2ffrtFcQR/1My6P5yJRhi28atByMidiHY+Ay9+WHDFDDycdFINGZkJ7zYn0+z9Y+kDWGp/iIgAtxjVMlox2DwXBGA3Vk3QK7yDZ39YpqY2c++CAPfCIr21NI4w8F8Z5wK8wWGorcZPc6+t0CYNncpXXwsvJFd8tGVbo20Gmg8oqWVleVkDuxouw8q5VbICZ7+7VGvEs/X87P6s0neY4IigwmB4VjjIJOwge/RH7yI1g3XLI0J6GN+1cxuFpGc4cxwPmFaBdSzQJhGGp+q6ygFEWnZTwYXLSewJG7nPt1L5zEeVJ8wjEB2n4CpvDOJaGXioPZETukCdurG3GsA3pXUu+1aWuLasEYXsUEpMYL6CTa9z9cj91qA14CA1JD+6AErCRKO+OFbCDYd8HaooDB+Wf6BiWx7kKecpcBae7QefJe8CRSzWzfhLdH5ZbxHOZPsUS5xsmDnfceIWedlRNqa/YVXtY6TLLF8XSkZ54nyFI5sE="
   file:
-    - dist/$GIT_TAG/genkan_device_$GENKAN_VERSION_linux_arm.tar.gz
-    - dist/releases-$GIT_TAG.zip
+    - dist/${GENKAN_VERSION}/genkan_device_${GENKAN_VERSION}_linux_arm.tar.gz
   on:
     tags: false
     branch: master
