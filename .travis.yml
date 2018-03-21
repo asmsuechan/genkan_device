@@ -24,4 +24,4 @@ after_deploy:
 
 env:
   global:
-    - GENKAN_VERSION: '0.0.8'
+    - GENKAN_VERSION: '0.0.9'
