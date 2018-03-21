@@ -37,7 +37,7 @@ func listen(uri *url.URL, topic string) {
 	client := connect("sub", uri)
 	client.Subscribe(topic, 0, func(client mqtt.Client, msg mqtt.Message) {
 		// Exec update script
-		exec.Command("./updater.sh", string(msg.Payload())).Run()
+		exec.Command("./updater.sh", string(msg.Payload()), "&").Run()
 	})
 }
 
