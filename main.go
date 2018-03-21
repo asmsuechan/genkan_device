@@ -13,7 +13,7 @@ import (
 func main() {
 	// mqtt.DEBUG = log.New(os.Stdout, "", 0)
 	// mqtt.ERROR = log.New(os.Stdout, "", 0)
-	uri := os.Getenv("GENKAN_URI")
+	uri := "tcp://" + os.Getenv("GENKAN_URI")
 	id := "device"
 	userName := os.Getenv("GENKAN_USERNAME")
 	password := os.Getenv("GENKAN_PASSWORD")
