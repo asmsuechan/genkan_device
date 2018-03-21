@@ -19,7 +19,7 @@ deploy:
     branch: master
 
 after_deploy:
-  - go build updateManager.go
+  - go build updateManager/main.go
   - ./updateManager $GENKAN_VERSION
 
 env:
