@@ -20,8 +20,8 @@ deploy:
 
 after_deploy:
   - go build updateManager/main.go
-  - ./updateManager $GENKAN_VERSION
+  - ./main $GENKAN_VERSION
 
 env:
   global:
-    - GENKAN_VERSION: '0.0.9'
+    - GENKAN_VERSION: '0.0.10'
