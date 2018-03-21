@@ -1,4 +1,4 @@
-package main
+package pushNewVersion
 
 import (
 	"flag"
