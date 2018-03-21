@@ -1,4 +1,4 @@
-package pushNewVersion
+package deployment
 
 import (
 	"flag"

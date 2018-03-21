@@ -1,4 +1,4 @@
-package updateManager
+package daemon
 
 import (
 	"fmt"
