@@ -18,10 +18,10 @@ deploy:
     tags: true
     branch: master
 
+after_deploy:
+  - go build updateManager.go
+  - ./updateManager $GENKAN_VERSION
+
 env:
   global:
     - GENKAN_VERSION: '0.0.8'
-
-after_deploy:
-	- go build updateManager.go
-  - ./updateManager $GENKAN_VERSION
