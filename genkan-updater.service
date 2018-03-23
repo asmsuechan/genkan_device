@@ -1,0 +1,15 @@
+[Unit]
+Description=GenkanUpdater
+After=syslog.target
+
+[Service]
+Type=simple
+User=root
+WorkingDirectory=/home/pi/
+ExecStart=/home/pi/updateManager
+Restart = always
+StandardOutput=null
+EnvironmentFile=/home/pi/.genkan.env
+
+[Install]
+WantedBy = multi-user.target
