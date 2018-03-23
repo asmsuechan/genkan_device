@@ -25,7 +25,7 @@ func main() {
 	work := func() {
 		servo.Move(uint8(27))
 
-		mqttAdaptor.On("genkan/device/1", func(msg mqtt.Message) {
+		mqttAdaptor.On("genkan/devices/1", func(msg mqtt.Message) {
 			if reflect.DeepEqual(msg.Payload(), []byte("open")) {
 				servo.Move(uint8(31))
 			} else if reflect.DeepEqual(msg.Payload(), []byte("close")) {
