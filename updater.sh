@@ -6,5 +6,5 @@ tar -zxvf genkan_device_$1_linux_arm.tar.gz
 mv genkan_device_$1_linux_arm/genkan_device /home/pi
 
 # Run the downloaded program and pi-blaster
-sudo systemctrl restart genkan
+sudo systemctl restart genkan
 rm -rf genkan_device_$1_linux_arm/ genkan_device_$1_linux_arm.tar.gz
