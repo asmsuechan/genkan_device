@@ -8,6 +8,7 @@ User=root
 WorkingDirectory=/home/pi/
 ExecStart=/home/pi/genkan_device
 Restart = always
+RuntimeMaxSec=3600s
 StandardOutput=null
 EnvironmentFile=/home/pi/.genkan.env
 

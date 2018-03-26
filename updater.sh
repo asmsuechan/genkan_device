@@ -9,5 +9,5 @@ mv genkan_device_$1_linux_arm/genkan_device $HOME
 kill `ps -ef | grep genkan_device | awk '{print $2;}'` 2>/dev/null
 
 # Run the downloaded program and pi-blaster
-$HOME/genkan_device
+sudo systemctrl restart genkan
 rm -rf genkan_device_$1_linux_arm/

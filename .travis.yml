@@ -24,7 +24,7 @@ after_deploy:
 
 env:
   global:
-    - GENKAN_VERSION: '0.0.16'
+    - GENKAN_VERSION: '0.0.17'
     # URI
     - secure: "Qdelx7l7aErd1wHCfC3J/wq4dlMLOLmY36MdzHvq6kKMtijr7Mihc5PFpm1XI8FUu5Jox5QJqPufNgbfrUvJOCEZY+dS8d4ztGX5qL5LkQPPXcyCGaZwkqVcRbGXN+LL9WhDEERC7f3O2vV8KKRLmdlomST7dU7KcHjfxayIPPpLfeyVPB5byPOaRxV+0mtlkLnK9V+pqmpwc7czqDOrVJCT+/0avG5GLFozOOP3XztunGskRM+tRmtqhQx0rql6x0bKz5p+qufF+vPhhn+UJGVG7nr9T2VDkiknZNTLJ/y+86KyNampArxBfJ0E3hzLkPcEEctxPdD53mv7//ag/+Sze90Z8v2ufwg3+PIqEtxQz17Zqi6ygVLCjXQLPnkhaaB5u1opBvpLCsIZfsWXaSIGcAZUNO2qGZGxwmsIW0hAbZEK6tnAZUOo6bRMnlC5odSkRxU0FmZ6jy0ar+lHO3tIV2q9RSwGWix66v7GCL01gmjJZkZ1m+KKlFaivKYX8BJKbec0rnOhyAcdu6Wa7J7PeB/z26AMOgf4rL8zhhomHX2wfwyITtfeNljOxw1v/+TnUMZBa7IsOSCYXDuxolbHItkrhomtseSZFDjpFR5ypnB3CLagUKQi1mKvm6wYEKP/er2aR6hPM0fTschHKPReuG34Nh5r+qA/3lN5U8I="
     # USERNAME

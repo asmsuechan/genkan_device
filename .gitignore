@@ -2,3 +2,5 @@ bin/**
 dist/
 pushNewVersion
 updateManager
+main
+.genkan.env
