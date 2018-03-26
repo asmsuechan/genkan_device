@@ -20,11 +20,11 @@ type History struct {
 }
 
 func PushOpenToFirebase(c firebase.Client) {
-	PushHistory(&History{Action: "open", RanAt: time.Now().String()}, c)
+	PushHistory(&History{Action: "open", RanAt: time.Now().UTC().Format(time.RFC3339)}, c)
 }
 
 func PushCloseToFirebase(c firebase.Client) {
-	PushHistory(&History{Action: "close", RanAt: time.Now().String()}, c)
+	PushHistory(&History{Action: "close", RanAt: time.Now().UTC().Format(time.RFC3339)}, c)
 }
 
 func PushHistory(h *History, c firebase.Client) {
