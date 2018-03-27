@@ -1,6 +1,6 @@
 [Unit]
 Description=Genkan
-After=syslog.target
+After=printer.target network.target multi-user.target
 
 [Service]
 Type=simple
